@@ -1,0 +1,119 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VP & Associates, Inc</title>
+  <link rel="stylesheet" type="text/css" href="styles1.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+
+
+<body>
+	<div id="site_wrap">
+    	<div id="site_inner">
+        	<div id="header" class="clearfix">
+        		<div class="container">
+        			<div id="logo">
+        				<!-- <img src="/what.jpg" alt="" /> -->
+								VP & Associates Inc
+				    </div><!--logo-->
+					<div id="mainNav">
+						<div class="container">
+							<ul class="level1" id="ul">
+								<li id="about"><a href="#">Home</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="#">Portfolio</a>
+									<ul class="level2">
+										<li><a href="#">Sub Item 1</a></li>
+										<li><a href="#">Sub Item 2</a></li>
+										<li><a href="#">Sub Item</a></li>
+										<li><a href="#">Sub Item 4</a></li>
+									</ul><!--end level2-->
+								</li><!-- end portfolio-->
+								<li><a href="#">Career</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">FTP Login</a></li>
+							</ul><!--end level1-->
+						</div><!--utility container-->
+					</div><!--mainNav-->
+				</div><!--header container-->
+			</div><!--header-->
+
+			<!-- paralax stuff here -->
+ 			<div id="paralax">
+				<div class="container">
+					<h3> This is our parallax feature </h3>
+				</div><!--paralax container-->
+			</div><!--paralax-->
+
+
+
+        	<!-- banner goes here-->
+
+			<div id="content" class="clearfix">
+				<div class="container">
+					<h1>VP & Associates Inc</h1>
+					<p>Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text </p>
+					<p>Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text Test home page text </p>
+				</div><!--content container-->
+			</div>
+
+			
+			
+
+			<!--expertise stuff here-->
+			<!--<div id="expertise-content" class="clearfix">
+				<div class="container">
+					<h1>Our Expertise</h1>
+					<p> </p>
+					<p> </p>
+				</div> --><!--content container-->
+			<!--</div> -->
+
+  			
+			<!-- feature blocks -->
+			<!-- <div id="feature-content" class="clearfix">
+				<div class="container">
+					<div class="feature-container">
+						 <div class="feature-block">
+						 	<img src="images/special01.jpg" alt="" />
+						 	<h4 class="feature-text">Text Goes Here</h4>
+						 </div>	
+						 <div class="feature-block">
+						 	<img src="images/special03.jpg" alt="" />
+						 	<h4 class="feature-text">Text Goes Here</h4>
+						 </div>
+				 	</div> --> <!-- feature image container -->
+				<!--</div>
+			</div> --><!--content container -->
+			
+			
+
+
+			<div id="footer" class="clearfix">
+				<div class="container">
+					<p> This is our footer text </p>
+				</div><!--container-->
+			</div><!--footer-->
+		</div><!--site_inner-->
+	</div><!-- site wrap-->
+</body>
+
+<script>
+var ul = document.getElementById('ul')
+console.log(ul)
+var about = document.getElementById('about')
+var content = document.getElementById('content')
+
+ul.addEventListener('click', function(e) {
+	console.log(e.target.tagName)
+	 if (e.target.tagName === 'A') {
+      alert(e.target.id);
+  }
+})
+
+</script>
+</html>
+
+
