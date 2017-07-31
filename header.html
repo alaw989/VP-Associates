@@ -1,0 +1,69 @@
+<html>
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="/portfolio.html">Portfolio</a>
+   <a href="/careers.html">Careers</a>
+   <a href="/services.html">Services</a>
+   <a href="/contactus.html">Contact</a>
+</div>
+
+<script>
+   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+
+<div id="main">
+   <div id="header" class="clearfix">
+      <div class="container">
+         <div id="logo">
+            <a href="/index.html"> <img id="logo-image" src="/images/vplogo.png" alt="" /></a>
+            <a href="/index.html"> <img id="logo-image2" src="/images/vplogo2.png" alt="" /></a>
+         </div>
+         <!--logo-->
+         <div class="hamburger" onclick="openNav()">
+            <img src="/images/hamburger.svg">
+         </div>
+         <div id="mainNav">
+            <div class="container">
+               <ul class="level0">
+                  <li><a href="#">FTP LOGIN</a></li>
+               </ul>
+               <ul class="level1">
+                  <li><a href="/index.html">home</a> <span>+</span></li>
+                  <li><a href="/portfolio.html">portfolio</a></li> <span>+</span>
+                  <!--<ul class="level2">
+                  
+                     <li><a href="#">Industrial</a></li>
+                     <li><a href="#">Bridges</a></li>
+                     <li><a href="#">Commercial</a></li>
+                     <li><a href="#">Misc.</a></li>
+                  </ul>
+                  -->
+                  <!--end level2-->
+                  </li>
+                  <!-- end portfolio-->
+                  <li><a href="/careers.html">careers</a> <span>+</span></li>
+                  <li><a href="/services.html">services</a></li> <span>+</span>
+                  <li><a href="/contactus.html">contact us</a></li>
+               </ul>
+               <!--end level1-->
+            </div>
+            <!--utility container-->
+         </div>
+         <!--mainNav-->
+      </div>
+      <!--header container-->
+   </div>
+   <!--header-->
+</div>
+
+</html>
